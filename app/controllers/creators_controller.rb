@@ -14,7 +14,6 @@ class CreatorsController < ApplicationController
 
   def new
     @creator = Creator.new
-    @shows = Show.all
   end
 
   def create

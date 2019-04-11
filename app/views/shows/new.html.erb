@@ -1,0 +1,9 @@
+<%= form_for @show do |f| %>
+ <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :show %>
+  <%= f.collection_select(:creator_id, @creators, :id, :name)%>
+
+  <%= f.submit "Add A Show" %>
+<%end%>
